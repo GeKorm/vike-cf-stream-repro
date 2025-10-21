@@ -1,6 +1,7 @@
 import type { Config } from "vike/types";
 import vikePhoton from "vike-photon/config";
 import vikeReact from "vike-react/config";
+import vikeReactQuery  from "vike-react-query/config";
 import Layout from "../layouts/LayoutDefault.js";
 
 // Default config (can be overridden by pages)
@@ -13,6 +14,7 @@ export default {
   // https://vike.dev/head-tags
   title: "My Vike App",
   description: "Demo showcasing Vike",
+  stream: true,
 
-  extends: [vikeReact, vikePhoton],
+  extends: [vikeReact, vikeReactQuery, vikePhoton],
 } satisfies Config;
